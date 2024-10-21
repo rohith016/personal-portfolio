@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img width=100 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img width=100 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Portfolio</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- code start here -->
+    <section>
+        <h1 class="title">My Blog</h1>
+        <div class="blog-container">
+            <div class="blog">
+                <h1 class="blog-title">Create Service provider on Laravel Service container</h1>
+
+                <p class="blog-description">
+                    <span>Create Service Provider in laravel</span>
+                    <span class="small-description">
+                       
+                    </span>
+                    <img src="./assets/laravel-codes/create_service_provider_custom.png" alt="">
+                </p>
+
+
+                <p class="blog-description">
+                    <span>Bind class dynamically by the user authentication</span>
+                    <span class="small-description">
+                        In Laravel, you can bind classes dynamically based on the currently authenticated user. This allows you to provide specific class instances depending on the user's role or other attributes, ensuring that your application remains flexible and context-aware.
+                        <br>
+                        <br>
+                        <i class="file-path">providers/AppserviceProvider.php or providers/PaymentServiceProvider(custom service provider)</i>
+                    </span>
+                    <img src="./assets/laravel-codes/class_bind_auth_user.png" alt="">
+                </p>
+                <p class="blog-description">
+                    <span>Bind class dynamically by the .env configutaion</span>
+                    <span class="small-description">
+                        In Laravel, you can bind classes dynamically based on the currently authenticated user. This allows you to provide specific class instances depending on the user's role or other attributes, ensuring that your application remains flexible and context-aware.
+                        <br>
+                        <br>
+                        <i class="file-path">providers/AppserviceProvider.php or providers/PaymentServiceProvider(custom service provider)</i>
+                    </span>
+                    <img src="./assets/laravel-codes/class_bind_env_config.png" alt="">
+                </p>
+                <p class="blog-description">
+                    <span>Bind class dynamically by the user request</span>
+                    <span class="small-description">
+                        Environment-based class binding is another powerful feature in Laravel. By utilizing the `.env` configuration file, you can bind classes dynamically depending on the environment your application is running in, whether it's local, production, or staging.
+                        <br>
+                        <br>
+                        <i class="file-path">providers/AppserviceProvider.php or providers/PaymentServiceProvider(custom service provider)</i>
+                    </span>
+                    <img src="./assets/laravel-codes/class_bind_user_request.png" alt="">
+                </p>
+                <p class="blog-description">
+                    <span>Bind class dynamically by contextual binding</span>
+                    <span class="small-description">
+                        Contextual binding in Laravel enables you to define different bindings for the same class depending on where it's being used. This is helpful when the same class is used in multiple locations but requires different implementations in each context.
+
+                        <br>
+                        <br>
+                        <i class="file-path">providers/AppserviceProvider.php or providers/PaymentServiceProvider(custom service provider)</i>
+                    </span>
+                    <img src="./assets/laravel-codes/contextual_binding.png" alt="">
+                </p>
+                <p class="blog-description">
+                    <span>Configutaion file for class binding</span>
+                    <span class="small-description">
+                        Laravel’s configuration files allow you to store class binding settings in a centralized location. This makes it easier to manage bindings, especially in large-scale applications where different services might require different bindings depending on their configuration.
+                        <br>
+                        <br>
+                        <i class="file-path">config/payment.php</i>
+                    </span>
+                    <img src="./assets/laravel-codes/config_payment_data.png" alt="">
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- code end here -->
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="index.html">Portfolio</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rohith Ramachandran. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+</html>

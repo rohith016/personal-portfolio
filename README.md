@@ -1,6 +1,6 @@
 # Personal Portfolio website Application
 
-## website like : https://rohith016.github.io/personal-portfolio/
+## website link : https://rohith016.github.io/personal-portfolio/
 
 ### This is the personal portfolio website for myself adding and showcasing the experience, key project, contact details and social links
 

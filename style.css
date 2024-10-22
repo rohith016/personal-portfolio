@@ -522,3 +522,106 @@ p {
   color: #807f7f;
   margin-top: 10px;;
 }
+
+
+/* Portfolio Container */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Portfolio Item */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+/* Portfolio Image */
+.portfolio-item img {
+  width: 100%;
+  /* height: auto; */
+  border-radius: 10px;
+}
+/* Overlay for description */
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+/* Overlay content */
+.portfolio-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.portfolio-description {
+  font-size: 1em;
+}
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+  .portfolio-title {
+      font-size: 1.3em;
+  }
+  .portfolio-description {
+      font-size: 0.9em;
+  }
+}
+
+
+/* Project Info Section */
+.project-info {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.project-info h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.project-info p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.project-info span {
+  font-weight: bold;
+}
+/* .project-info a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.project-info a:hover {
+  background-color: #0056b3;
+} */

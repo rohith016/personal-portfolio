@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+          h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 30px 0;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img width=130 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img width=100 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <h1>Canbasket</h1>
+
+
+    <!-- Project Info Section -->
+    <div class="project-info">
+        <p><span>Company:</span> Netstager Technologies </p>
+        <p><span>Company Website:</span> <a href="https://www.netstager.com/" target="_blank"> www.netstager.com</a></p>
+        <p><span>Role:</span> Full Stack Developer</p>
+        <p><span>Technology Used:</span> Laravel, MySQL, RestFull API, Git, BitBucket, Blade, CSS, HTML, Stripe, AWS, Javascript</p>
+        <p><span>Duration:</span> October 2018 - January 2020</p>
+        <p><span>Project Overview:</span> 
+          Canbasket is a Ecommerce platform that helps businesses to manage their online transactions.
+        </p>
+        <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.canbasket.ca'"
+              > 
+              Live Demo
+        </button>
+    </div>
+
+    <h1>Gallery</h1>
+
+    <div class="portfolio-gallery">
+        
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+            <img src="./assets/projects/canbasket/home.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Home</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/projects/canbasket/login-signup.png" alt="Project 2">
+          <div class="portfolio-overlay">
+              <div>
+                  <h2 class="portfolio-title">Login & Signup</h2>
+              </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/canbasket/store-location-search.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Store Search</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="./assets/projects/canbasket/store-page.png" alt="Project 1">
+          <div class="portfolio-overlay">
+              <div>
+                  <h2 class="portfolio-title">Stores</h2>
+              </div>
+          </div>
+        </div>
+          <div class="portfolio-item">
+            <img src="./assets/projects/canbasket/products.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Products</h2>
+                </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="./assets/projects/canbasket/product-details.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Product Details</h2>
+                </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="./assets/projects/canbasket/orders.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Order History</h2>
+                </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="./assets/projects/canbasket/payment.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Payment</h2>
+                </div>
+            </div>
+          </div>
+      </div>
+        <!-- Portfolio Item 2 -->
+        
+
+
+        
+    </div>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rohith Ramachandran. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>

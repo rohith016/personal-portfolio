@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+          h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 30px 0;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img width=130 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img width=100 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <h1>CookieYes GDPR Cookie Banner</h1>
+
+
+    <!-- Project Info Section -->
+    <div class="project-info">
+        <p><span>Company:</span> Reviewbit </p>
+        <p><span>Company Website:</span> <a href="http://www.reviewbit.app" target="_blank"> www.reviewbit.app</a></p>
+        <p><span>Role:</span> Backend Developer</p>
+        <p><span>Technology Used:</span> Laravel, MySQL, RestFull API, Git, BitBucket, ReactJs</p>
+        <p><span>Duration:</span> October 2023 - January 2024</p>
+        <p><span>Project Overview:</span> CookieYes is a cloud-based platform for GDPR and CCPA compliance that assists in managing ePrivacy and other international privacy laws. It enables businesses to scan their websites to detect and categorize cookies automatically. CookieYes offers an audit table that helps to compile a list of all the cookies used by the website and their detailed description.
+            <br>* Single-click automatic scanning and categorization of cookies.
+            <br>* Fully customizable cookie banner that matches the aesthetics of your website.
+            <br>* Automatically block third-party scripts until the user gives consent.
+            <br>* Record and maintain a log of the cookie consent you receive from the visitors.
+            <br>* Free privacy and cookie policy generator.
+        </p>
+        <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://apps.shopify.com/cookieyes'"
+              > 
+              Live Demo
+        </button>
+    </div>
+
+    <h1>Gallery</h1>
+
+    <div class="portfolio-gallery">
+        <div class="portfolio-item">
+            <img src="./assets/projects/cookieyes/banner1.png" alt="Project 2">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">BANNER 1</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+            <img src="./assets/projects/cookieyes/banner2.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">BANNER 2</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/cookieyes/banner3.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">BANNER 3</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+        
+
+
+        
+    </div>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rohith Ramachandran. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>

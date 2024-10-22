@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+          h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 30px 0;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img width=130 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img width=100 src="./assets/logo.png"  alt="Rohith Ramachandran profile picture" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <h1>Reviewbit Reviews via WhatsApp</h1>
+
+
+    <!-- Project Info Section -->
+    <div class="project-info">
+        <p><span>Company:</span> Reviewbit </p>
+        <p><span>Company Website:</span> <a href="http://www.reviewbit.app" target="_blank"> www.reviewbit.app</a></p>
+        <p><span>Role:</span> Lead Backend Developer</p>
+        <p><span>Technology Used:</span> Laravel, MongoDB, MySQL, RestFull API, Shopify API, Git, Github, ReactJs, Whatsapp API, Nginx, GCP, Meta API, Stripe API</p>
+        <p><span>Duration:</span> April 2022 - May 2024</p>
+        <p><span>Project Overview:</span> A review app to send automated, personalized review requests. Which offers a notably higher conversion rate than email requests. The ease of sending photos & videos via WhatsApp will prompt customers to respond readily. Create an emotional bond with customers via an intuitive chat experience. Send separate follow-up messages for star ratings, and text & photo reviews and motivate customers to leave reviews. Display reviews in attractive widgets to spur hesitant buyers to make quick decisions.
+            <br>* Personalized message templates that can be edited to match your brand voice.
+            <br>* Gather and Showcase Photo and Video Reviews
+            <br>* Multiple customizable display options to showcase user-generated content.
+            <br>* Send review requests in 11 languages from WhatsApp-Business API-verified number.
+            <br>* Send discounts to happy customers and offer prompt service to the unhappy ones
+        </p>
+        <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://apps.shopify.com/whatsapp-reviews'"
+              > 
+              Live Demo
+        </button>
+    </div>
+
+    <h1>Gallery</h1>
+
+    <div class="portfolio-gallery">
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/dashboard.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Dashboard</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/dash-widgets.png" alt="Project 1">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Dashboard Widgets</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/config.png" alt="Project 2">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Configuration/Settings</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/billing.png" alt="Project 3">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Billing/Transaction</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/integration.png" alt="Project 3">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Integration</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/conversation.png" alt="Project 3">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Conversation Settings</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/plans.png" alt="Project 3">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Subscription Plans</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/branding.png" alt="Project 3">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Branding</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="./assets/projects/reviewbit-shopify/reviews.png" alt="Project 3">
+            <div class="portfolio-overlay">
+                <div>
+                    <h2 class="portfolio-title">Reviews</h2>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rohith Ramachandran. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -343,7 +343,6 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
-  height: 500px;
 }
 
 article {
